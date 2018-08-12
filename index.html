@@ -43,68 +43,89 @@
 <body>
 
 <div class="dop" id="index"></div>
-<header class="header">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-2">
-                <a href="#" class="logo">Logo</a>
-            </div>
-            <div class="col-md-5">
-                <div class="head-menu">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#index">Главная</a>
-                            </li>
-                            <li>
-                                <a href="#catalog">Каталог</a>
-                            </li>
-                            <li>
-                                <a href="#akcii">Акция</a>
-                            </li>
-                            <li>
-                                <a href="#preim">Преимущества</a>
-                            </li>
-                            <li>
-                                <a href="#otziv">Отзывы</a>
-                            </li>
-                            <li>
-                                <a href="#contacts">Контакты</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="search">
-                    <input type="text" class="inp-search">
-                    <div class="search-icon"></div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <a href="tel:+7(999) 999-99-99" class="head-phone">+7(999) 999-99-99</a>
-            </div>
-        </div>
-    </div>
-</header>
-
 
 <section class="section-one">
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-2">
+                    <a href="#" class="logo">Logo</a>
+                </div>
+                <div class="col-md-5">
+                    <div class="head-menu">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#index">Главная</a>
+                                </li>
+                                <li>
+                                    <a href="#catalog">Каталог</a>
+                                </li>
+                                <li>
+                                    <a href="#akcii">Акция</a>
+                                </li>
+                                <li>
+                                    <a href="#preim">Преимущества</a>
+                                </li>
+                                <li>
+                                    <a href="#otziv">Отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#contacts">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+               <!-- <div class="col-md-2">
+                    <div class="search">
+                        <input type="text" class="inp-search">
+                        <div class="search-icon"></div>
+                    </div>
+                </div>-->
+                <div class="col-md-3 offset-md-2">
+                    <a href="tel:+7(999) 999-99-99" class="head-phone">+7(999) 999-99-99</a>
+                </div>
+            </div>
+        </div>
+    </header>
     <div class="container">
         <div class="row">
             <div class="col-md-4">
                 <form class="form-call">
-                    <span>Форма обратной связи</span>
+                    <div class="form-call-title">Форма обратной связи</div>
+                    <div class="form-call-text">Оставьте заявку и мы свяжемся с вами в течение 15 минут</div>
+                    <div class="input-parent remove-error">
+                        <div class="input-name">
+                            <div class="input-title">Ваше имя</div>
+                            <div>
+                                <input name="name" type="text" class="input-nal inp-name remove-error">
+                            </div>
+                        </div>
+                        <div class="input-phone">
+                            <div class="input-title">Ваш телефон</div>
+                            <div>
+                                <input name="phone" type="text" class="input-nal inp-phone remove-error">
+                            </div>
+                        </div>
+                        <div class="btn-all">Отправить</div>
+                    </div>
                 </form>
             </div>
-            <div class="col-md-8">
-                <span>Картинка (либо текст - тогда фоном будет изображение)</span>
+            <div class="col-md-3">
+                <img src="5.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-5">
+                <div class="sect-one-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam debitis impedit, magni maiores nam nesciunt nulla officiis, porro saepe tenetur veritatis! Deleniti dolorem maiores quo ratione sint temporibus unde!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore eaque earum, ex officiis quaerat qui reprehenderit! Commodi culpa enim et facilis ipsam iusto nostrum quod reiciendis, vel voluptatem. Non.
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="akcii" class="section-three">
+<!--<section id="akcii" class="section-three">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -117,108 +138,10 @@
             </div>
         </div>
     </div>
-</section>
+</section>-->
 
 <section id="catalog" class="section-two">
     <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="catalog-item">
-                    <div class="catalog-item-img">
-                        <img src="icons/1.png" alt="" class="img-responsive">
-                    </div>
-                    <div class="name">Название товара</div>
-                    <div class="name-info">Краткая характеристика</div>
-                    <div class="size">Размер(см)</div>
-                    <ul class="size-ul">
-                        <li class="size-ul-li active" data-size="40">40</li>
-                        <li class="size-ul-li" data-size="80">80</li>
-                        <li class="size-ul-li" data-size="100">100</li>
-                    </ul>
-                    <div class="price">
-                        Цена:
-                        <span class="price-span active" data-price="40" data-sum="500">500</span>
-                        <span class="price-span" data-price="80" data-sum="800">800</span>
-                        <span class="price-span" data-price="100" data-sum="1200">1200</span>
-                        руб
-                    </div>
-                    <div class="btn-all all-js-data" data-toggle="modal" data-target=".modal-tovar">Купить в один клик
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="catalog-item">
-                    <div class="catalog-item-img">
-                        <img src="icons/2.png" alt="" class="img-responsive">
-                    </div>
-                    <div class="name">Название товара2</div>
-                    <div class="name-info">Краткая характеристика</div>
-                    <div class="size">Размер(см)</div>
-                    <ul class="size-ul">
-                        <li class="size-ul-li active" data-size="40">40</li>
-                        <li class="size-ul-li" data-size="80">80</li>
-                        <li class="size-ul-li" data-size="100">100</li>
-                    </ul>
-                    <div class="price">
-                        Цена:
-                        <span class="price-span active" data-price="40" data-sum="400">400</span>
-                        <span class="price-span" data-price="80" data-sum="900">900</span>
-                        <span class="price-span" data-price="100" data-sum="1200">1200</span>
-                        руб
-                    </div>
-                    <div class="btn-all all-js-data" data-toggle="modal" data-target=".modal-tovar">Купить в один клик
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="catalog-item">
-                    <div class="catalog-item-img">
-                        <img src="icons/3.png" alt="" class="img-responsive">
-                    </div>
-                    <div class="name">Название товара3</div>
-                    <div class="name-info">Краткая характеристика</div>
-                    <div class="size">Размер(см)</div>
-                    <ul class="size-ul">
-                        <li class="size-ul-li active" data-size="40">40</li>
-                        <li class="size-ul-li" data-size="80">80</li>
-                        <li class="size-ul-li" data-size="100">100</li>
-                    </ul>
-                    <div class="price">
-                        Цена:
-                        <span class="price-span active" data-price="40" data-sum="400">400</span>
-                        <span class="price-span" data-price="80" data-sum="900">900</span>
-                        <span class="price-span" data-price="100" data-sum="1200">1200</span>
-                        руб
-                    </div>
-                    <div class="btn-all all-js-data" data-toggle="modal" data-target=".modal-tovar">Купить в один клик
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="catalog-item">
-                    <div class="catalog-item-img">
-                        <img src="icons/3.png" alt="" class="img-responsive">
-                    </div>
-                    <div class="name">Название товара3</div>
-                    <div class="name-info">Краткая характеристика</div>
-                    <div class="size">Размер(см)</div>
-                    <ul class="size-ul">
-                        <li class="size-ul-li active" data-size="40">40</li>
-                        <li class="size-ul-li" data-size="80">80</li>
-                        <li class="size-ul-li" data-size="100">100</li>
-                    </ul>
-                    <div class="price">
-                        Цена:
-                        <span class="price-span active" data-price="40" data-sum="400">400</span>
-                        <span class="price-span" data-price="80" data-sum="900">900</span>
-                        <span class="price-span" data-price="100" data-sum="1200">1200</span>
-                        руб
-                    </div>
-                    <div class="btn-all all-js-data" data-toggle="modal" data-target=".modal-tovar">Купить в один клик
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="row">
             <div class="col-md-3">
                 <div class="catalog-item">
@@ -369,7 +292,23 @@
             </div>
             <div class="col-md-4">
                 <form class="form-call">
-                    <span>Форма обратной связи</span>
+                    <div class="form-call-title">Форма обратной связи</div>
+                    <div class="form-call-text">Оставьте заявку и мы свяжемся с вами в течение 15 минут</div>
+                    <div class="input-parent remove-error">
+                        <div class="input-name">
+                            <div class="input-title">Ваше имя</div>
+                            <div>
+                                <input name="name" type="text" class="input-nal inp-name remove-error">
+                            </div>
+                        </div>
+                        <div class="input-phone">
+                            <div class="input-title">Ваш телефон</div>
+                            <div>
+                                <input name="phone" type="text" class="input-nal inp-phone remove-error">
+                            </div>
+                        </div>
+                        <div class="btn-all">Отправить</div>
+                    </div>
                 </form>
             </div>
         </div>
@@ -433,7 +372,6 @@
             <!--{{/form}}-->
         </div>
     </div>
-</div>
 </div>
 
 

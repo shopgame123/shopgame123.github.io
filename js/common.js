@@ -25,16 +25,16 @@ $(function () {
     });
 
     //fixed menu
-    $(window).scroll(function () {
-       if($(this).scrollTop() > 30){
-           $('.header').addClass('fixed');
-           $('.dop').addClass('fixed');
-       }
-       else{
-           $('.header').removeClass('fixed');
-           $('.dop').removeClass('fixed');
-       }
-    });
+    // $(window).scroll(function () {
+    //    if($(this).scrollTop() > 30){
+    //        $('.header').addClass('fixed');
+    //        $('.dop').addClass('fixed');
+    //    }
+    //    else{
+    //        $('.header').removeClass('fixed');
+    //        $('.dop').removeClass('fixed');
+    //    }
+    // });
 
     //scroll
     $(document).on('click','.head-menu > nav > ul > li > a', function () {

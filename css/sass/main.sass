@@ -117,16 +117,16 @@ button
   &.fixed
     position: static
 .header
-  background-color: #ffa8a8
   padding: 20px 0
   transition: all .4s ease
+  margin-bottom: 40px
   &.fixed
     padding: 10px 0
     position: fixed
     top: 0
     left: 0
     width: 100%
-    z-index: 1
+    z-index: 2
   .logo
     display: block
   .head-menu
@@ -158,7 +158,7 @@ button
               background-color: #ffffff
               transition: all .3s ease
               transform: translateX(100%)
-            &:hover, &.active
+            &:hover
               &::before
                 transform: translateX(0%)
   .head-phone
@@ -220,23 +220,93 @@ button
         opacity: 1
         visibility: visible
 .section-one
-  padding: 50px 0
-  background-color: #dcd36a
+  padding: 0 0 50px
+  background-color: #394b5f
+  opacity: .85
   min-height: 400px
-  span
-    padding: 20px
-    min-height: 300px
-    display: flex
-    align-items: center
-    justify-content: center
-    border: 2px solid #fff
+  .sect-one-text
+    color: #ffffff
+    line-height: normal
+    font-size: 22px
+
+.form-call
+  background-color: rgba(36, 51, 67, 0.8)
+  padding: 30px
+  border-bottom: 3px solid #1a222b
+  color: #97a4b2
+  &-title
+    color: #ffffff
+    font-family: 'Cuprum-Bold', sans-serif
+    font-size: 26px
+    line-height: normal
+    text-align: center
+  &-text
+    font-size: 18px
+    line-height: normal
+    margin: 20px 0
+  .input-title
+    color: #778390
+    margin-bottom: 4px
+    line-height: normal
+    font-size: 18px
+    font-family: 'Cuprum-Bold', sans-serif
+  .input-nal
+    width: 100%
+    text-indent: 12px
+    padding: 8px 0
+    border: none
+    background-color: #fff
+    margin-bottom: 20px
+    color: #1f2436
+    transition: all .5s ease
+    position: relative
+    display: block
+    box-shadow: 0 -2px #1f2436
+    font-size: 20px
+    &:focus
+      box-shadow: 0 -4px #1f2436
+
+.btn-all
+  border: none
+  display: block
+  width: 100%
+  margin: 0 auto
+  text-align: center
+  height: 50px
+  padding: 4px 0
+  font-size: 22px
+  font-family: 'Cuprum-Bold', sans-serif
+  cursor: pointer
+  position: relative
+  z-index: 0
+  color: #fff
+  overflow: hidden
+  outline: 1px solid #fff
+  transition: all .5s ease
+  background-color: #e60000
+  &::before
+    content: ''
+    position: absolute
+    bottom: 10px
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: darken(#e60000, 10%)
+    z-index: -1
+    transition: all .4s ease
+    transform: translateY(100%)
+  &:hover
+    color: #ffffff
+    &::before
+      bottom: 0
+      transform: translateY(0%)
 
 .section-two
   //background-color: #b0d959
   padding: 50px 0 30px
   .catalog-item
     padding: 20px
-    border: 1px solid #b0d959
+    //border: 1px solid #b0d959
     min-height: 280px
     border-radius: 15px
     overflow: hidden
@@ -245,7 +315,8 @@ button
     transition: all .3s ease
     box-shadow: 3px 3px 30px 1px rgba(0, 0, 0, 0.3)
     &-img
-      background: linear-gradient(135deg, #fa782e 15%, #b0d959 93%)
+      background-color: #ffffff
+      //background: linear-gradient(135deg, #394b5f 15%, #b0d959 93%)
       margin: -20px -20px 20px -20px
       height: 230px
       padding: 20px
@@ -294,7 +365,8 @@ button
           &.active
             border: 1px solid #212121
             border-radius: 100%
-            background: linear-gradient(135deg, #fa782e 15%, #b0d959 93%)
+            background-color: #394b5f
+            //background: linear-gradient(135deg, #394b5f 15%, #b0d959 93%)
             color: #ffffff
             width: 30px
             height: 30px
@@ -323,7 +395,7 @@ button
         top: 0
         left: 0
         transform: scale(1)
-        background: linear-gradient(135deg, #b0d959 15%, #fa782e 93%)
+        background: linear-gradient(135deg, #b0d959 15%, #394b5f 93%)
         width: 100%
         height: 100%
         z-index: -1
