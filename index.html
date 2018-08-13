@@ -77,12 +77,12 @@
                         </nav>
                     </div>
                 </div>
-               <!-- <div class="col-md-2">
-                    <div class="search">
-                        <input type="text" class="inp-search">
-                        <div class="search-icon"></div>
-                    </div>
-                </div>-->
+                <!-- <div class="col-md-2">
+                     <div class="search">
+                         <input type="text" class="inp-search">
+                         <div class="search-icon"></div>
+                     </div>
+                 </div>-->
                 <div class="col-md-3 offset-md-2">
                     <a href="tel:+7(999) 999-99-99" class="head-phone">+7(999) 999-99-99</a>
                 </div>
@@ -112,42 +112,62 @@
                     </div>
                 </form>
             </div>
-            <div class="col-md-3">
-                <img src="5.jpg" alt="" class="img-responsive">
+        </div>
+    </div>
+</section>
+
+<section id="akcii" class="section-three" style="background-image: url(../akcii-twos.jpg)">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="all-title white">Акция</div>
             </div>
-            <div class="col-md-5">
-                <div class="sect-one-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam debitis impedit, magni maiores nam nesciunt nulla officiis, porro saepe tenetur veritatis! Deleniti dolorem maiores quo ratione sint temporibus unde!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore eaque earum, ex officiis quaerat qui reprehenderit! Commodi culpa enim et facilis ipsam iusto nostrum quod reiciendis, vel voluptatem. Non.
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="all-text white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium animi commodi dolores eveniet excepturi facere fugit ipsum minima nam non odit pariatur quasi reiciendis, repellat rerum, unde ut veniam.</div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+				<div class="block-akcii">
+                    <div class="block-akcii-top">
+                        <div class="block-akcii-top-number">20</div>
+                        <div class="block-akcii-top-number">:</div>
+                        <div class="block-akcii-top-number">03</div>
+                        <div class="block-akcii-top-number">:</div>
+                        <div class="block-akcii-top-number">46</div>
+                    </div>
+                    <div class="block-akcii-top">
+                        <div class="block-akcii-top-title">часов</div>
+                        <div class="block-akcii-top-title">минут</div>
+                        <div class="block-akcii-top-title">секунд</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!--<section id="akcii" class="section-three">
+<section id="catalog" class="section-two">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-				<span>
-					Акция
-					<br>
-					<br>
-					Тут типо таймер
-				</span>
+                <div class="all-title gray">Каталог продукции</div>
             </div>
         </div>
-    </div>
-</section>-->
-
-<section id="catalog" class="section-two">
-    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="all-text gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium animi commodi dolores eveniet excepturi facere fugit ipsum minima nam non odit pariatur quasi reiciendis, repellat rerum, unde ut veniam.</div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-3">
                 <div class="catalog-item">
                     <div class="catalog-item-img">
                         <img src="icons/1.png" alt="" class="img-responsive">
                     </div>
+
                     <div class="name">Название товара</div>
                     <div class="name-info">Краткая характеристика</div>
                     <div class="size">Размер(см)</div>
@@ -165,6 +185,7 @@
                     </div>
                     <div class="btn-all all-js-data" data-toggle="modal" data-target=".modal-tovar">Купить в один клик
                     </div>
+
                 </div>
             </div>
             <div class="col-md-3">
@@ -326,50 +347,36 @@
 </footer>
 
 <div class="modal fade modal-tovar">
-    <div class="modal-dialog modal-md">
-        <div class="modal-body">
-            <form class="form-call">
-                <!--{{form 'modal_form', class=>"form-call", 'ajax' => true, 'action' => '/ajax/modal_form'}}-->
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="closess" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+            <div class="modal-body">
+                <form class="form-call">
+                    <input type="hidden" name="data[tovar]" value="">
+                    <input type="hidden" name="data[price]" value="">
+                    <input type="hidden" name="data[size]" value="">
 
-                <input type="hidden" name="data[tovar]" value="">
-                <input type="hidden" name="data[price]" value="">
-                <input type="hidden" name="data[size]" value="">
-
-                <div class="input-parent remove-error">
-
-                    <div class="form-text">Заказ обратного звонка</div>
-
-                    <div class="input-name">
-                        <div>
-                            <input type="text" class="inp-name form-clear remove-error" placeholder="Ваше имя"
-                                   autocomplete="off">
-                            <!--{{input 'name', 'class' => 'inp-name form-clear remove-error', placeholder=>"Ваше имя",  autocomplete=>"off"}}-->
+                    <div class="form-call-title">Форма обратной связи</div>
+                    <div class="form-call-text">Оставьте заявку и мы свяжемся с вами в течение 15 минут</div>
+                    <div class="input-parent remove-error">
+                        <div class="input-name">
+                            <div class="input-title">Ваше имя</div>
+                            <div>
+                                <input name="name" type="text" class="input-nal inp-name remove-error">
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="input-phone">
-                        <div>
-                            <input type="text" class="inp-phone form-clear remove-error" placeholder="Ваш телефон"
-                                   autocomplete="off">
-                            <!--{{input 'phone', 'class' => 'inp-phone form-clear remove-error', placeholder=>"Ваш телефон",  autocomplete=>"off"}}-->
+                        <div class="input-phone">
+                            <div class="input-title">Ваш телефон</div>
+                            <div>
+                                <input name="phone" type="text" class="input-nal inp-phone remove-error">
+                            </div>
                         </div>
+                        <div class="btn-all">Отправить</div>
                     </div>
-
-                    <!-- <div class="input-mess">
-                         <div>
-                             <textarea class="inp-mess form-clear remove-error" placeholder="Комментарий"></textarea>
-                         </div>
-                     </div>-->
-
-                    <button class="btn-callback foot-call-btn">Жду звонка</button>
-
-                    <label for="check1" class="check-lab">
-                        <input type="checkbox" id="check1"><span class="check-span">я согласен на обработку персональных данных</span>
-                    </label>
-
-                </div>
-            </form>
-            <!--{{/form}}-->
+                </form>
+            </div>
         </div>
     </div>
 </div>
