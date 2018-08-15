@@ -1,5 +1,15 @@
 $(function () {
 
+    //carousel
+    $('.owl-carousel.carousel-otziv').owlCarousel({
+        items: 1,
+        // nav: true,
+        // navText: ["<",">"],
+        mouseDrag: false,
+        touchDrag: false,
+        pullDrag: false
+    });
+
     $(document).on('click','.size-ul-li', function () {
         var parent = $(this).parent().parent();
         parent.find('.size-ul-li').removeClass('active');
@@ -69,5 +79,32 @@ $(function () {
         $('.form-call [name="data[price]"]').val($data_price);
         $('.form-call [name="data[size]"]').val($data_size);
     });
+
+    //img to svg
+    if($('.js-svg-img').length){
+        $('.js-svg-img').each(function(){
+            var $img = $(this);
+            var imgID = $img.attr('id');
+            var imgClass = $img.attr('class');
+            var imgURL = $img.attr('src');
+
+            $.get(imgURL, function(data) {
+                var $svg = $(data).find('svg');
+                if(typeof imgID !== 'undefined') {
+                    $svg = $svg.attr('id', imgID);
+                }
+                if(typeof imgClass !== 'undefined') {
+                    $svg = $svg.attr('class', imgClass+' replaced-svg');
+                }
+                $svg = $svg.removeAttr('xmlns:a');
+                if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+                    $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+                }
+                $img.replaceWith($svg);
+
+            }, 'xml');
+        });
+    }
+
 
 });
