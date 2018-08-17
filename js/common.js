@@ -1,5 +1,4 @@
 $(function () {
-
     //carousel
     $('.owl-carousel.carousel-otziv').owlCarousel({
         items: 1,
@@ -32,6 +31,14 @@ $(function () {
         $('body,html').animate({
             scrollTop: 0
         },'slow');
+    });
+
+    $(window).scroll(function () {
+        if($(this).scrollTop()){
+            $('.top').addClass('active');
+        }else{
+            $('.top').removeClass('active');
+        }
     });
 
     //fixed menu
