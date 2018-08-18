@@ -1,16 +1,36 @@
 $(function () {
+
+
+
+    $(document).on('click','.color-all',function () {
+       var $parent = $(this).parent('.catalog-item-hover');
+       $parent.find('.color-all').removeClass('active');
+       $parent.find(this).addClass('active');
+       $parent.find('.data-img').attr('src', $(this).data('img'));
+    });
+
+    //odd
+    $('.information__item:odd').addClass('order');
+
     //carousel
     $('.owl-carousel.carousel-otziv').owlCarousel({
         items: 1,
-        // nav: true,
-        // navText: ["<",">"],
+        mouseDrag: false,
+        touchDrag: false,
+        pullDrag: false
+    });
+    $('.owl-carousel.carousel-info').owlCarousel({
+        items: 1,
+        loop: true,
+        nav: true,
+        navText: ["<",">"],
         mouseDrag: false,
         touchDrag: false,
         pullDrag: false
     });
 
     $(document).on('click','.size-ul-li', function () {
-        var parent = $(this).parent().parent();
+        var parent = $(this).parent().parent().parent();
         parent.find('.size-ul-li').removeClass('active');
         parent.find(this).addClass('active');
 
@@ -82,9 +102,11 @@ $(function () {
         var parent = $(this).parent();
         var $data_price = parent.find('.price-span.active').data('sum');
         var $data_size = parent.find('.size-ul-li.active').data('size');
+        var $data_color = parent.find('.color-all.active').data('color');
 
         $('.form-call [name="data[price]"]').val($data_price);
         $('.form-call [name="data[size]"]').val($data_size);
+        $('.form-call [name="data[color]"]').val($data_color);
     });
 
     //img to svg

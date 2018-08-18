@@ -44,7 +44,7 @@
 
 <div class="dop" id="index"></div>
 
-<section class="section-one">
+<section class="section-one" style="background-image: url(../header.jpg)">
     <header class="header">
         <div class="container">
             <div class="row align-items-center">
@@ -95,7 +95,10 @@
             <div class="col-md-8">
                 <div class="wrap-head">
                     <div class="title-head">Lorem ipsum dolor sit.</div>
-                    <div class="text-head">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi beatae culpa debitis, distinctio facere hic in magnam obcaecati perspiciatis porro praesentium quas quasi qui quo rem sequi sunt unde.</div>
+                    <div class="text-head">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi
+                        beatae culpa debitis, distinctio facere hic in magnam obcaecati perspiciatis porro praesentium
+                        quas quasi qui quo rem sequi sunt unde.
+                    </div>
                 </div>
             </div>
             <div class="col-md-4">
@@ -118,6 +121,90 @@
                         <div class="btn-all">Отправить</div>
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="information">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="all-title gray">Информация</div>
+            </div>
+        </div>
+        <div class="carousel-info">
+            <div class="information__item">
+                <div class="row">
+                    <div class="col-md-4 order">
+                        <img src="icons/1.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="information__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A exercitationem inventore, libero minus natus nisi quia reiciendis repellat, repudiandae sit tempore voluptate voluptatum. Id laborum necessitatibus quaerat quam quia reprehenderit.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="information__item">
+                <div class="row">
+                    <div class="col-md-4 order">
+                        <img src="icons/6.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="information__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A exercitationem inventore, libero minus natus nisi quia reiciendis repellat, repudiandae sit tempore voluptate voluptatum. Id laborum necessitatibus quaerat quam quia reprehenderit.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="information__item">
+                <div class="row">
+                    <div class="col-md-4 order">
+                        <img src="icons/3.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="information__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A exercitationem inventore, libero minus natus nisi quia reiciendis repellat, repudiandae sit tempore voluptate voluptatum. Id laborum necessitatibus quaerat quam quia reprehenderit.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="information__item">
+                <div class="row">
+                    <div class="col-md-4 order">
+                        <img src="icons/4.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="information__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A exercitationem inventore, libero minus natus nisi quia reiciendis repellat, repudiandae sit tempore voluptate voluptatum. Id laborum necessitatibus quaerat quam quia reprehenderit.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="information__item">
+                <div class="row">
+                    <div class="col-md-4 order">
+                        <img src="icons/5.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="information__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A exercitationem inventore, libero minus natus nisi quia reiciendis repellat, repudiandae sit tempore voluptate voluptatum. Id laborum necessitatibus quaerat quam quia reprehenderit.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="information__item">
+                <div class="row">
+                    <div class="col-md-4 order">
+                        <img src="icons/2.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="information__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A exercitationem inventore, libero minus natus nisi quia reiciendis repellat, repudiandae sit tempore voluptate voluptatum. Id laborum necessitatibus quaerat quam quia reprehenderit.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -178,134 +265,34 @@
             <div class="col-md-3">
                 <div class="catalog-item effect-5">
                     <div class="catalog-item-hover">
-                        <div class="catalog-item-img">
-                            <img src="icons/1.png" alt="" class="img-responsive">
+                        <div class="catalog-item-img" data-toggle="modal" data-target=".modal-tovar-item">
+                            <img src="icons/1.png" alt="" class="img-responsive data-img">
                         </div>
 
                         <div class="name">Название товара</div>
                         <div class="name-info">Краткая характеристика</div>
-                        <div class="size">Размер(см)</div>
-                        <ul class="size-ul">
-                            <li class="size-ul-li active" data-size="40">40</li>
-                            <li class="size-ul-li" data-size="80">80</li>
-                            <li class="size-ul-li" data-size="100">100</li>
-                        </ul>
-                        <div class="price">
-                            Цена:
-                            <span class="price-span active" data-price="40" data-sum="500">500 <span class="price-span-old">700р.</span></span>
-                            <span class="price-span" data-price="80" data-sum="800">800 </span>
-                            <span class="price-span" data-price="100" data-sum="1200">1200 <span class="price-span-old">1700р.</span></span>
-                             р.
+
+                        <div class="color">Цвет:</div>
+                        <div class="color-all color-grey active" data-color="grey" data-img="icons/1.png">
                         </div>
-                        <div class="btn-all all-js-data" data-toggle="modal" data-target=".modal-tovar">Купить в один
-                            клик
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="catalog-item effect-5">
-                    <div class="catalog-item-hover">
-                        <div class="catalog-item-img">
-                            <img src="icons/2.png" alt="" class="img-responsive">
-                        </div>
-                        <div class="name">Название товара2</div>
-                        <div class="name-info">Краткая характеристика</div>
-                        <div class="size">Размер(см)</div>
-                        <ul class="size-ul">
-                            <li class="size-ul-li active" data-size="40">40</li>
-                            <li class="size-ul-li" data-size="80">80</li>
-                            <li class="size-ul-li" data-size="100">100</li>
-                        </ul>
-                        <div class="price">
-                            Цена:
-                            <span class="price-span active" data-price="40" data-sum="400">400</span>
-                            <span class="price-span" data-price="80" data-sum="900">900</span>
-                            <span class="price-span" data-price="100" data-sum="1200">1200</span>
-                            руб
-                        </div>
-                        <div class="btn-all all-js-data" data-toggle="modal" data-target=".modal-tovar">Купить в один
-                            клик
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="catalog-item effect-5">
-                    <div class="catalog-item-hover">
-                        <div class="catalog-item-img">
-                            <img src="icons/3.png" alt="" class="img-responsive">
-                        </div>
-                        <div class="name">Название товара3</div>
-                        <div class="name-info">Краткая характеристика</div>
-                        <div class="size">Размер(см)</div>
-                        <ul class="size-ul">
-                            <li class="size-ul-li active" data-size="40">40</li>
-                            <li class="size-ul-li" data-size="80">80</li>
-                            <li class="size-ul-li" data-size="100">100</li>
-                        </ul>
-                        <div class="price">
-                            Цена:
-                            <span class="price-span active" data-price="40" data-sum="400">400</span>
-                            <span class="price-span" data-price="80" data-sum="900">900</span>
-                            <span class="price-span" data-price="100" data-sum="1200">1200</span>
-                            руб
-                        </div>
-                        <div class="btn-all all-js-data" data-toggle="modal" data-target=".modal-tovar">Купить в один
-                            клик
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="catalog-item effect-5">
-                    <div class="catalog-item-hover">
-                        <div class="catalog-item-img">
-                            <img src="icons/3.png" alt="" class="img-responsive">
-                        </div>
-                        <div class="name">Название товара3</div>
-                        <div class="name-info">Краткая характеристика</div>
-                        <div class="size">Размер(см)</div>
-                        <ul class="size-ul">
-                            <li class="size-ul-li active" data-size="40">40</li>
-                            <li class="size-ul-li" data-size="80">80</li>
-                            <li class="size-ul-li" data-size="100">100</li>
-                        </ul>
-                        <div class="price">
-                            Цена:
-                            <span class="price-span active" data-price="40" data-sum="400">400</span>
-                            <span class="price-span" data-price="80" data-sum="900">900</span>
-                            <span class="price-span" data-price="100" data-sum="1200">1200</span>
-                            руб
-                        </div>
-                        <div class="btn-all all-js-data" data-toggle="modal" data-target=".modal-tovar">Купить в один
-                            клик
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="catalog-item effect-5">
-                    <div class="catalog-item-hover">
-                        <div class="catalog-item-img">
-                            <img src="icons/1.png" alt="" class="img-responsive">
+                        <div class="color-all color-brown" data-color="brown" data-img="icons/2.png"></div>
+                        <div class="color-all color-pink" data-color="pink" data-img="icons/3.png"></div>
+
+                        <div class="df">
+                            <div class="size">Высота(см):</div>
+                            <ul class="size-ul">
+                                <li class="size-ul-li active" data-size="30">30</li>
+                                <li class="size-ul-li" data-size="40">40</li>
+                                <li class="size-ul-li" data-size="50">50</li>
+                            </ul>
                         </div>
 
-                        <div class="name">Название товара</div>
-                        <div class="name-info">Краткая характеристика</div>
-                        <div class="size">Размер(см)</div>
-                        <ul class="size-ul">
-                            <li class="size-ul-li active" data-size="40">40</li>
-                            <li class="size-ul-li" data-size="80">80</li>
-                            <li class="size-ul-li" data-size="100">100</li>
-                        </ul>
                         <div class="price">
                             Цена:
-                            <span class="price-span active" data-price="40" data-sum="500">500 <span class="price-span-old">700р.</span></span>
-                            <span class="price-span" data-price="80" data-sum="800">800 </span>
-                            <span class="price-span" data-price="100" data-sum="1200">1200 <span class="price-span-old">1700р.</span></span>
+                            <span class="price-span active" data-price="30" data-sum="500">500 <span
+                                    class="price-span-old">700р.</span></span>
+                            <span class="price-span" data-price="40" data-sum="800">800 </span>
+                            <span class="price-span" data-price="50" data-sum="1200">1200 <span class="price-span-old">1700р.</span></span>
                             р.
                         </div>
                         <div class="btn-all all-js-data" data-toggle="modal" data-target=".modal-tovar">Купить в один
@@ -317,23 +304,72 @@
             <div class="col-md-3">
                 <div class="catalog-item effect-5">
                     <div class="catalog-item-hover">
-                        <div class="catalog-item-img">
+                        <div class="catalog-item-img" data-toggle="modal" data-target=".modal-tovar-item">
+                            <img src="icons/2.png" alt="" class="img-responsive data-img">
+                        </div>
+
+                        <div class="name">Название товара</div>
+                        <div class="name-info">Краткая характеристика</div>
+
+                        <div class="color">Цвет:</div>
+                        <div class="color-all color-grey active" data-img="icons/2.png"></div>
+                        <div class="color-all color-brown" data-img="icons/3.png"></div>
+                        <div class="color-all color-pink" data-img="icons/1.png"></div>
+
+                        <div class="df">
+                            <div class="size">Высота(см):</div>
+                            <ul class="size-ul">
+                                <li class="size-ul-li active" data-size="30">30</li>
+                                <li class="size-ul-li" data-size="40">40</li>
+                                <li class="size-ul-li" data-size="50">50</li>
+                            </ul>
+                        </div>
+
+                        <div class="price">
+                            Цена:
+                            <span class="price-span active" data-price="30" data-sum="500">500 <span
+                                    class="price-span-old">700р.</span></span>
+                            <span class="price-span" data-price="40" data-sum="800">800 </span>
+                            <span class="price-span" data-price="50" data-sum="1200">1200 <span class="price-span-old">1700р.</span></span>
+                            р.
+                        </div>
+                        <div class="btn-all all-js-data" data-toggle="modal" data-target=".modal-tovar">Купить в один
+                            клик
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="catalog-item effect-5">
+                    <div class="catalog-item-hover">
+                        <div class="catalog-item-img" data-toggle="modal" data-target=".modal-tovar-item">
                             <img src="icons/2.png" alt="" class="img-responsive">
                         </div>
-                        <div class="name">Название товара2</div>
+
+                        <div class="name">Название товара</div>
                         <div class="name-info">Краткая характеристика</div>
-                        <div class="size">Размер(см)</div>
-                        <ul class="size-ul">
-                            <li class="size-ul-li active" data-size="40">40</li>
-                            <li class="size-ul-li" data-size="80">80</li>
-                            <li class="size-ul-li" data-size="100">100</li>
-                        </ul>
+
+                        <div class="color">Цвет:</div>
+                        <div class="color-all color-grey active"></div>
+                        <div class="color-all color-brown"></div>
+                        <div class="color-all color-pink"></div>
+
+                        <div class="df">
+                            <div class="size">Высота(см):</div>
+                            <ul class="size-ul">
+                                <li class="size-ul-li active" data-size="30">30</li>
+                                <li class="size-ul-li" data-size="40">40</li>
+                                <li class="size-ul-li" data-size="50">50</li>
+                            </ul>
+                        </div>
+
                         <div class="price">
                             Цена:
-                            <span class="price-span active" data-price="40" data-sum="400">400</span>
-                            <span class="price-span" data-price="80" data-sum="900">900</span>
-                            <span class="price-span" data-price="100" data-sum="1200">1200</span>
-                            руб
+                            <span class="price-span active" data-price="30" data-sum="500">500 <span
+                                    class="price-span-old">700р.</span></span>
+                            <span class="price-span" data-price="40" data-sum="800">800 </span>
+                            <span class="price-span" data-price="50" data-sum="1200">1200 <span class="price-span-old">1700р.</span></span>
+                            р.
                         </div>
                         <div class="btn-all all-js-data" data-toggle="modal" data-target=".modal-tovar">Купить в один
                             клик
@@ -344,50 +380,34 @@
             <div class="col-md-3">
                 <div class="catalog-item effect-5">
                     <div class="catalog-item-hover">
-                        <div class="catalog-item-img">
+                        <div class="catalog-item-img" data-toggle="modal" data-target=".modal-tovar-item">
                             <img src="icons/3.png" alt="" class="img-responsive">
                         </div>
-                        <div class="name">Название товара3</div>
+
+                        <div class="name">Название товара</div>
                         <div class="name-info">Краткая характеристика</div>
-                        <div class="size">Размер(см)</div>
-                        <ul class="size-ul">
-                            <li class="size-ul-li active" data-size="40">40</li>
-                            <li class="size-ul-li" data-size="80">80</li>
-                            <li class="size-ul-li" data-size="100">100</li>
-                        </ul>
+
+                        <div class="color">Цвет:</div>
+                        <div class="color-all color-grey active"></div>
+                        <div class="color-all color-brown"></div>
+                        <div class="color-all color-pink"></div>
+
+                        <div class="df">
+                            <div class="size">Высота(см):</div>
+                            <ul class="size-ul">
+                                <li class="size-ul-li active" data-size="30">30</li>
+                                <li class="size-ul-li" data-size="40">40</li>
+                                <li class="size-ul-li" data-size="50">50</li>
+                            </ul>
+                        </div>
+
                         <div class="price">
                             Цена:
-                            <span class="price-span active" data-price="40" data-sum="400">400</span>
-                            <span class="price-span" data-price="80" data-sum="900">900</span>
-                            <span class="price-span" data-price="100" data-sum="1200">1200</span>
-                            руб
-                        </div>
-                        <div class="btn-all all-js-data" data-toggle="modal" data-target=".modal-tovar">Купить в один
-                            клик
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="catalog-item effect-5">
-                    <div class="catalog-item-hover">
-                        <div class="catalog-item-img">
-                            <img src="icons/3.png" alt="" class="img-responsive">
-                        </div>
-                        <div class="name">Название товара3</div>
-                        <div class="name-info">Краткая характеристика</div>
-                        <div class="size">Размер(см)</div>
-                        <ul class="size-ul">
-                            <li class="size-ul-li active" data-size="40">40</li>
-                            <li class="size-ul-li" data-size="80">80</li>
-                            <li class="size-ul-li" data-size="100">100</li>
-                        </ul>
-                        <div class="price">
-                            Цена:
-                            <span class="price-span active" data-price="40" data-sum="400">400</span>
-                            <span class="price-span" data-price="80" data-sum="900">900</span>
-                            <span class="price-span" data-price="100" data-sum="1200">1200</span>
-                            руб
+                            <span class="price-span active" data-price="30" data-sum="500">500 <span
+                                    class="price-span-old">700р.</span></span>
+                            <span class="price-span" data-price="40" data-sum="800">800 </span>
+                            <span class="price-span" data-price="50" data-sum="1200">1200 <span class="price-span-old">1700р.</span></span>
+                            р.
                         </div>
                         <div class="btn-all all-js-data" data-toggle="modal" data-target=".modal-tovar">Купить в один
                             клик
@@ -414,7 +434,8 @@
                         </ul>
                         <div class="price">
                             Цена:
-                            <span class="price-span active" data-price="40" data-sum="500">500 <span class="price-span-old">700р.</span></span>
+                            <span class="price-span active" data-price="40" data-sum="500">500 <span
+                                    class="price-span-old">700р.</span></span>
                             <span class="price-span" data-price="80" data-sum="800">800 </span>
                             <span class="price-span" data-price="100" data-sum="1200">1200 <span class="price-span-old">1700р.</span></span>
                             р.
@@ -566,12 +587,22 @@
             <div class="col-md-12">
                 <div class="owl-carousel carousel-otziv">
                     <div class="carousel-otziv-item">
-                        <img src="icons/q.jpg" alt="" class="img-responsive">
-                        <div class="carousel-otziv-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolore dolores fugit hic laboriosam maxime minima natus necessitatibus, tempore vel. Ab aperiam eos illum ipsum maiores odio officiis reiciendis sunt.</div>
+                        <div class="carousel-otziv-item-img">
+                            <img src="icons/q.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="carousel-otziv-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Dignissimos dolore dolores fugit hic laboriosam maxime minima natus necessitatibus, tempore
+                            vel. Ab aperiam eos illum ipsum maiores odio officiis reiciendis sunt.
+                        </div>
                     </div>
                     <div class="carousel-otziv-item">
-                        <img src="icons/qw.jpg" alt="" class="img-responsive">
-                        <div class="carousel-otziv-item-text">Lorem ipsum dolor sit amet, nissimosit hic laboriosam maxime minima natus necessitatibus, tempore vel. Ab aperiam eos illum ipsum maiores odio officiis reiciendis sunt.</div>
+                        <div class="carousel-otziv-item-img">
+                            <img src="icons/qw.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="carousel-otziv-item-text">Lorem ipsum dolor sit amet, nissimosit hic laboriosam
+                            maxime minima natus necessitatibus, tempore vel. Ab aperiam eos illum ipsum maiores odio
+                            officiis reiciendis sunt.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -579,11 +610,18 @@
     </div>
 </section>
 
-<section id="contacts" class="section-one section-six">
+<section id="contacts" class="section-one section-six" style="background-image: url(../45.jpg)">
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <span>Картинка (либо текст - тогда фоном будет изображение)</span>
+                <div class="wrap-head">
+                    <div class="title-head">Lorem ipsum dolor sit.</div>
+                    <div class="text-head">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi
+                        beatae culpa debitis, distinctio facere hic in magnam obcaecati perspiciatis porro praesentium
+                        quas quasi qui quo rem sequi sunt unde.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae eligendi explicabo natus officiis quibusdam rem repudiandae vel voluptatum. Facere fuga nemo quas quo vero? Dignissimos eveniet laborum maiores quo sit.
+                    </div>
+                </div>
             </div>
             <div class="col-md-4">
                 <form class="form-call">
@@ -612,17 +650,32 @@
 
 <footer class="footer header">
     <div class="container">
+        <!--        <div class="row">
+                    <div class="col-md-3">
+                        logo
+                    </div>
+                    <div class="col-md-3 offset-md-6">
+                        <a href="tel:+7(999) 999-99-99" class="head-phone">+7(999) 999-99-99</a>
+                        <span class="head-dos">Доставка по Казани <span>бесплатно!</span></span>
+                    </div>
+                </div>-->
         <div class="row">
-            <div class="col-md-3">
-                logo
-            </div>
-            <div class="col-md-3 offset-md-6">
-                <a href="tel:+7(999) 999-99-99" class="head-phone">+7(999) 999-99-99</a>
-                <span class="head-dos">Доставка по Казани <span>бесплатно!</span></span>
+            <div class="col-md-12">
+                <div class="foot-social">
+                    <a href="#" class="foot-social-a" target="_blank">
+                        <img src="icons/svg/what.svg" alt="" class="img-responsive js-svg-img">
+                    </a>
+                    <a href="#" class="foot-social-a" target="_blank">
+                        <img src="icons/svg/vk.svg" alt="" class="img-responsive js-svg-img">
+                    </a>
+                    <a href="#" class="foot-social-a" target="_blank">
+                        <img src="icons/svg/instagram.svg" alt="" class="img-responsive js-svg-img">
+                    </a>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <div class="foot-copy">
                     &copy; 2018 Все права защищены
                     <br>
@@ -648,6 +701,7 @@
                     <input type="hidden" name="data[tovar]" value="">
                     <input type="hidden" name="data[price]" value="">
                     <input type="hidden" name="data[size]" value="">
+                    <input type="hidden" name="data[color]" value="">
 
                     <div class="form-call-title">Форма обратной связи</div>
                     <div class="form-call-text">Оставьте заявку и мы свяжемся с вами в течение 15 минут</div>
@@ -667,6 +721,27 @@
                         <div class="btn-all">Отправить</div>
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-tovar-item">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <button type="button" class="closess" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="icons/1.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="modal-tovar-item__title">Название</div>
+                        <div class="modal-tovar-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi blanditiis cum cumque deserunt, distinctio error eveniet expedita hic in ipsam maxime nesciunt numquam quibusdam, recusandae repellat reprehenderit vitae. Debitis, eius.</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
