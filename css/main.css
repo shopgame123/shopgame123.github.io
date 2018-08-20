@@ -1045,15 +1045,183 @@ button {
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
-  /**/ }
+  .btn-all {
+    height: 46px;
+    font-size: 20px; }
+  .form-call .input-nal {
+    padding: 4px 0; }
+  .header .head-dos {
+    font-size: 13px; }
+  .header .head-phone, .form-call .input-nal {
+    font-size: 19px; }
+  .header .head-menu > nav > ul > li > a, .form-call-text, .form-call .input-title, .section-two .catalog-item .name {
+    font-size: 17px; }
+  .all-text {
+    font-size: 26px; }
+  .all-title {
+    font-size: 40px; }
+    .all-title::before {
+      height: 6px; }
+  .wrap-head .title-head {
+    font-size: 50px; }
+  .form-call-title, .wrap-head .text-head {
+    font-size: 24px; }
+  .form-call {
+    padding: 24px; }
+  .block-akcii-top-number {
+    font-size: 76px; }
+  .block-akcii-top-title {
+    font-size: 26px; }
+  .block-akcii-top {
+    width: 70%; }
+  .section-four .sect-preim .preim-item .img-responsive {
+    width: 80px;
+    height: 80px; }
+  .section-four .sect-preim .preim-item-text {
+    font-size: 20px; }
+  .section-five .carousel-otziv-item {
+    margin: 50px 0 10px; }
+  .section-five .carousel-otziv-item-text {
+    font-size: 22px;
+    margin: 30px auto 0; }
+  .footer .foot-copy {
+    font-size: 15px; }
+  .section-two .catalog-item-img {
+    height: 210px; }
+  .section-two .catalog-item .name-info {
+    font-size: 10px; }
+  .section-two .catalog-item .size-ul-li.active {
+    font-size: 14px;
+    width: 24px;
+    height: 24px;
+    margin: 0 4px; }
+  .section-two .catalog-item .price {
+    font-size: 18px; }
+  .section-two .catalog-item .price-span {
+    margin-left: 10px; }
+  .section-two .catalog-item {
+    width: 100%; }
+  .section-two .catalog-item .btn-all {
+    font-size: 16px;
+    padding: 4px 0;
+    height: 40px; }
+  .modal-tovar-item__title {
+    font-size: 26px; }
+  .modal-tovar-item__text {
+    font-size: 20px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 991px) {
-  /**/ }
+  .header .head-menu > nav > ul > li > a, .form-call-text, .form-call .input-title, .section-two .catalog-item .name {
+    font-size: 15px; }
+  .header .head-phone, .form-call .input-nal {
+    font-size: 17px; }
+  .header .head-dos {
+    font-size: 11px;
+    position: relative;
+    top: -6px; }
+  .wrap-head .title-head {
+    font-size: 42px;
+    margin-bottom: 30px; }
+  .form-call-title, .wrap-head .text-head {
+    font-size: 19px; }
+  .form-call {
+    padding: 14px; }
+  .form-call .input-nal {
+    padding: 3px 0;
+    margin-bottom: 10px; }
+  .btn-all {
+    font-size: 18px;
+    height: 38px; }
+  .all-title {
+    font-size: 32px;
+    padding-bottom: 6px; }
+    .all-title::before {
+      height: 5px; }
+  .all-text {
+    font-size: 22px;
+    margin: 40px 0; }
+  .section-three {
+    min-height: 500px; }
+  .block-akcii-top-number {
+    font-size: 60px; }
+  .block-akcii-top-title {
+    font-size: 22px; }
+  .block-akcii-top {
+    width: 76%; }
+  .section-two .catalog-item-hover {
+    padding: 10px; }
+  .section-two .catalog-item-img {
+    height: 190px;
+    margin: 0; }
+  .section-two .catalog-item .size-ul-li {
+    margin: 0 4px; }
+    .section-two .catalog-item .size-ul-li.active {
+      width: 22px;
+      height: 22px;
+      font-size: 13px;
+      margin: 0; }
+  .section-two .catalog-item .price {
+    font-size: 16px;
+    margin: 10px 0; }
+    .section-two .catalog-item .price-span {
+      margin-left: 4px; }
+  .section-two .catalog-item .price-span-old {
+    right: -60px; }
+  .modal-tovar-item .img-responsive {
+    height: 200px; }
+  .modal-tovar-item__title {
+    font-size: 22px;
+    margin-top: 20px; }
+  .modal-tovar-item__text {
+    font-size: 17px; }
+  .section-two .catalog-item .btn-all {
+    font-size: 14px;
+    height: 32px;
+    padding: 2px 0; }
+  .modal-tovar .modal-dialog {
+    width: 300px; }
+  .section-four .sect-preim .preim-item .img-responsive {
+    width: 70px;
+    height: 70px; }
+  .section-four .sect-preim .preim-item-title {
+    font-size: 60px; }
+  .section-four .sect-preim .preim-item-text {
+    font-size: 16px; }
+  .section-four .sect-preim .preim-item .min-h {
+    min-height: 80px; }
+  .section-four {
+    min-height: 400px; }
+  .section-five .carousel-otziv-item-text {
+    font-size: 18px; }
+  .footer .foot-social-a {
+    width: 34px;
+    height: 34px;
+    padding: 6px; }
+  .footer .foot-copy {
+    font-size: 14px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
-  /**/ }
+  .wrap-head .title-head {
+    font-size: 52px; }
+  .head-menu {
+    display: none; }
+  .form-call {
+    padding: 22px; }
+  .form-call-title, .wrap-head .text-head {
+    font-size: 24px; }
+  .header .head-menu > nav > ul > li > a, .form-call-text, .form-call .input-title, .section-two .catalog-item .name {
+    font-size: 20px; }
+  .form-call .input-nal {
+    padding: 6px 0; }
+  .header .head-phone, .form-call .input-nal {
+    font-size: 22px; }
+  .btn-all {
+    font-size: 22px;
+    height: 48px; }
+  .form-call .input-nal {
+    margin-bottom: 20px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
