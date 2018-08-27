@@ -37,10 +37,86 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
-
 </head>
 
-<body>
+<body onload="time();">
+
+<input type="hidden" name="" id="Aktsiya_year" value="2018">
+<input type="hidden" name="" id="Aktsiya_month" value="8">
+<input type="hidden" name="" id="Aktsiya_day" value="28">
+
+<script>
+        var $my_year = $("#Aktsiya_year").attr("value");
+        var $my_month = $("#Aktsiya_month").attr("value");
+        var $my_day = $("#Aktsiya_day").attr("value");
+        timeend= new Date();
+        // IE и FF по разному отрабатывают getYear()
+        timeend= new Date(timeend.getYear()>1900?(timeend.getYear()+1):(timeend.getYear()+1901),0,1);
+        // для задания обратного отсчета до определенной даты укажите дату в формате:
+        timeend= new Date($my_year, $my_month-1, $my_day);
+        // Для задания даты с точностью до времени укажите дату в формате:
+        // timeend= new Date(ГОД, МЕСЯЦ-1, ДЕНЬ, ЧАСЫ-1, МИНУТЫ);
+        function time() {
+            today = new Date();
+            today = Math.floor((timeend-today)/1000);
+            tsec=today%60; today=Math.floor(today/60); if(tsec<10)tsec='0'+tsec;
+            tmin=today%60; today=Math.floor(today/60); if(tmin<10)tmin='0'+tmin;
+            thour=today%24; today=Math.floor(today/24);
+
+            timestr=today +" дней "+ thour+" часов "+tmin+" минут "+tsec+" секунд";
+
+            var today_all = '',
+                thour_all = '',
+                tmin_all = '',
+                tsec_all = '';
+            today = today.toString();
+            thour = thour.toString();
+            tmin = tmin.toString();
+            tsec = tsec.toString();
+
+            if(today.length < 2){
+                today = '0' + today;
+            }
+
+            if(thour.length < 2){
+                thour = '0' + thour;
+            }
+
+            if(tmin.length < 2){
+                tmin = '0' + tmin;
+            }
+
+            if(tsec.length < 2){
+                tsec = '0' + tsec;
+            }
+
+
+            for (var i=0; i<today.length; i++)  {
+                today_all += '<span class="count_box">' + today[i] + '</span>';
+            }
+            for (var i=0; i<thour.length; i++)  {
+                thour_all += '<span class="count_box">' + thour[i] + '</span>';
+            }
+            for (var i=0; i<tmin.length; i++)  {
+                tmin_all += '<span class="count_box">' + tmin[i] + '</span>';
+            }
+            for (var i=0; i<tsec.length; i++)  {
+                tsec_all += '<span class="count_box">' + tsec[i] + '</span>';
+            }
+
+            console.log(today_all);
+            console.log(thour_all);
+            console.log(tmin_all);
+            console.log(tsec_all);
+
+            document.getElementById('stock-day').innerHTML=today_all;
+            document.getElementById('stock-hour').innerHTML=thour_all;
+            document.getElementById('stock-min').innerHTML=tmin_all;
+            document.getElementById('stock-sec').innerHTML=tsec_all;
+
+            window.setTimeout("time()",1000);
+        }
+</script>
 
 <div class="dop" id="index"></div>
 
@@ -236,13 +312,16 @@
             <div class="col-md-10">
                 <div class="block-akcii">
                     <div class="block-akcii-top">
-                        <div class="block-akcii-top-number">20</div>
+                        <div class="block-akcii-top-number" id="stock-day"></div>
                         <div class="block-akcii-top-number">:</div>
-                        <div class="block-akcii-top-number">03</div>
+                        <div class="block-akcii-top-number" id="stock-hour"></div>
                         <div class="block-akcii-top-number">:</div>
-                        <div class="block-akcii-top-number">46</div>
+                        <div class="block-akcii-top-number" id="stock-min"></div>
+                        <div class="block-akcii-top-number">:</div>
+                        <div class="block-akcii-top-number" id="stock-sec"></div>
                     </div>
                     <div class="block-akcii-top">
+                        <div class="block-akcii-top-title">Дней</div>
                         <div class="block-akcii-top-title">часов</div>
                         <div class="block-akcii-top-title">минут</div>
                         <div class="block-akcii-top-title">секунд</div>
@@ -591,7 +670,5 @@
         </div>
     </div>
 </div>
-
-
 </body>
 </html>
