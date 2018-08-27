@@ -196,10 +196,21 @@ button
                 transform: translateX(0%)
                 background-color: $accent
   .head-phone
-    display: block
     font-size: 20px
     font-family: 'Cuprum-Bold', sans-serif
     line-height: 18px
+    display: flex
+    align-items: center
+    .img-responsive
+      width: 25px
+      height: 25px
+      fill: #fff
+      margin-right: 20px
+      transition: all .4s ease
+    &:hover
+      .img-responsive
+        animation: phone .4s
+        fill: $accent
   .head-dos
     font-size: 14px
     line-height: normal
@@ -263,6 +274,14 @@ button
         opacity: 1
         visibility: visible
 
+@keyframes phone
+  0%
+    transform: rotate(0)
+  50%
+    transform: rotate(30deg)
+  100%
+    transform: rotate(0deg)
+
 .wrap-head
   padding: 40px 0
   .title-head
@@ -280,7 +299,7 @@ button
   background-position: center
   background-size: cover
   position: relative
-  z-index: 0
+  z-index: 8
   &::before
     content: ''
     position: absolute
@@ -356,7 +375,19 @@ button
     &:focus
       box-shadow: 0 -4px $accent
       border-color: $accent
-
+  &_akcii
+    margin-top: 60px
+    border: none
+    background: transparent
+    padding: 0!important
+    .input-nal
+      box-shadow: none
+      margin: 0
+      color: #97a4b2
+      &:focus
+        box-shadow: none
+      &::placeholder
+        color: #97a4b2
 .btn-all
   border: none
   display: block
@@ -801,15 +832,32 @@ button
   background-color: #394b5f
   opacity: .85
   min-height: 400px
-
+  z-index: 0
 .footer
   padding: 30px 0
   background-color: #76b329
   margin: 0
+  .foot-info
+    margin: 20px 0
+    display: flex
+    align-items: center
+    justify-content: center
+    &-all
+      display: flex
+      font-size: 18px
+      align-items: center
+      .img-responsive
+        width: 26px
+        height: 26px
+        fill: #fff
+        margin-right: 10px
+      &:first-child
+        margin-right: 10px
+      &:last-child
+        margin-left: 10px
   .foot-copy
     line-height: normal
     text-align: center
-    margin-top: 20px
   .foot-social
     display: flex
     align-items: center

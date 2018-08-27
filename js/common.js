@@ -1,5 +1,19 @@
 $(function () {
 
+    //menu
+    $(document).on('click','.bar-menu',function () {
+        if ($('body').hasClass('show-sidebar')) {
+            $('body').removeClass('show-sidebar');
+        }
+        if ($('body').hasClass('show-menu')) {
+            $(this).removeClass('active');
+            $('body').removeClass('show-menu').removeClass('modal-open');
+        } else {
+            $(this).addClass('active');
+            $('body').addClass('show-menu').addClass('modal-open');
+        }
+    });
+
 
 
     $(document).on('click','.color-all',function () {

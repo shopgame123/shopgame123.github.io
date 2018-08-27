@@ -44,6 +44,10 @@
 
 <div class="dop" id="index"></div>
 
+<div class="bar-menu">
+    <span></span>
+</div>
+
 <section class="section-one" style="background-image: url(../header-min.jpg)">
     <header class="header">
         <div class="container">
@@ -55,9 +59,9 @@
                     <div class="head-menu">
                         <nav>
                             <ul>
-                                <li>
+                               <!-- <li>
                                     <a href="#index">Главная</a>
-                                </li>
+                                </li>-->
                                 <li>
                                     <a href="#catalog">Каталог</a>
                                 </li>
@@ -84,7 +88,10 @@
                      </div>
                  </div>-->
                 <div class="col-md-3 offset-md-2">
-                    <a href="tel:+7(999) 999-99-99" class="head-phone">+7(999) 999-99-99</a>
+                    <a href="tel:+7(999) 999-99-99" class="head-phone">
+                        <img src="icons/svg/phone-call.svg" alt="" class="img-responsive js-svg-img">
+                        +7(999) 999-99-99
+                    </a>
                     <span class="head-dos">Доставка по Казани <span>бесплатно!</span></span>
                 </div>
             </div>
@@ -243,6 +250,27 @@
                 </div>
             </div>
         </div>
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <form class="form-call form-call_akcii">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div>
+                                <input name="name" type="text" class="input-nal inp-name remove-error" placeholder="Ваше имя">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div>
+                                <input name="phone" type="text" class="input-nal inp-phone remove-error" placeholder="Ваш телефон">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn-all">Отправить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -332,194 +360,6 @@
                             <span class="price-span" data-price="40" data-sum="800">800 </span>
                             <span class="price-span" data-price="50" data-sum="1200">1200 <span class="price-span-old">1700р.</span></span>
                             р.
-                        </div>
-                        <div class="btn-all all-js-data" data-toggle="modal" data-target=".modal-tovar">Купить в один
-                            клик
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="catalog-item effect-5">
-                    <div class="catalog-item-hover">
-                        <div class="catalog-item-img" data-toggle="modal" data-target=".modal-tovar-item">
-                            <img src="icons/2.png" alt="" class="img-responsive">
-                        </div>
-
-                        <div class="name">Название товара</div>
-                        <div class="name-info">Краткая характеристика</div>
-
-                        <div class="color">Цвет:</div>
-                        <div class="color-all color-grey active"></div>
-                        <div class="color-all color-brown"></div>
-                        <div class="color-all color-pink"></div>
-
-                        <div class="df">
-                            <div class="size">Высота(см):</div>
-                            <ul class="size-ul">
-                                <li class="size-ul-li active" data-size="30">30</li>
-                                <li class="size-ul-li" data-size="40">40</li>
-                                <li class="size-ul-li" data-size="50">50</li>
-                            </ul>
-                        </div>
-
-                        <div class="price">
-                            Цена:
-                            <span class="price-span active" data-price="30" data-sum="500">500 <span
-                                    class="price-span-old">700р.</span></span>
-                            <span class="price-span" data-price="40" data-sum="800">800 </span>
-                            <span class="price-span" data-price="50" data-sum="1200">1200 <span class="price-span-old">1700р.</span></span>
-                            р.
-                        </div>
-                        <div class="btn-all all-js-data" data-toggle="modal" data-target=".modal-tovar">Купить в один
-                            клик
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="catalog-item effect-5">
-                    <div class="catalog-item-hover">
-                        <div class="catalog-item-img" data-toggle="modal" data-target=".modal-tovar-item">
-                            <img src="icons/3.png" alt="" class="img-responsive">
-                        </div>
-
-                        <div class="name">Название товара</div>
-                        <div class="name-info">Краткая характеристика</div>
-
-                        <div class="color">Цвет:</div>
-                        <div class="color-all color-grey active"></div>
-                        <div class="color-all color-brown"></div>
-                        <div class="color-all color-pink"></div>
-
-                        <div class="df">
-                            <div class="size">Высота(см):</div>
-                            <ul class="size-ul">
-                                <li class="size-ul-li active" data-size="30">30</li>
-                                <li class="size-ul-li" data-size="40">40</li>
-                                <li class="size-ul-li" data-size="50">50</li>
-                            </ul>
-                        </div>
-
-                        <div class="price">
-                            Цена:
-                            <span class="price-span active" data-price="30" data-sum="500">500 <span
-                                    class="price-span-old">700р.</span></span>
-                            <span class="price-span" data-price="40" data-sum="800">800 </span>
-                            <span class="price-span" data-price="50" data-sum="1200">1200 <span class="price-span-old">1700р.</span></span>
-                            р.
-                        </div>
-                        <div class="btn-all all-js-data" data-toggle="modal" data-target=".modal-tovar">Купить в один
-                            клик
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="catalog-item effect-5">
-                    <div class="catalog-item-hover">
-                        <div class="catalog-item-img">
-                            <img src="icons/1.png" alt="" class="img-responsive">
-                        </div>
-
-                        <div class="name">Название товара</div>
-                        <div class="name-info">Краткая характеристика</div>
-                        <div class="size">Размер(см)</div>
-                        <ul class="size-ul">
-                            <li class="size-ul-li active" data-size="40">40</li>
-                            <li class="size-ul-li" data-size="80">80</li>
-                            <li class="size-ul-li" data-size="100">100</li>
-                        </ul>
-                        <div class="price">
-                            Цена:
-                            <span class="price-span active" data-price="40" data-sum="500">500 <span
-                                    class="price-span-old">700р.</span></span>
-                            <span class="price-span" data-price="80" data-sum="800">800 </span>
-                            <span class="price-span" data-price="100" data-sum="1200">1200 <span class="price-span-old">1700р.</span></span>
-                            р.
-                        </div>
-                        <div class="btn-all all-js-data" data-toggle="modal" data-target=".modal-tovar">Купить в один
-                            клик
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="catalog-item effect-5">
-                    <div class="catalog-item-hover">
-                        <div class="catalog-item-img">
-                            <img src="icons/2.png" alt="" class="img-responsive">
-                        </div>
-                        <div class="name">Название товара2</div>
-                        <div class="name-info">Краткая характеристика</div>
-                        <div class="size">Размер(см)</div>
-                        <ul class="size-ul">
-                            <li class="size-ul-li active" data-size="40">40</li>
-                            <li class="size-ul-li" data-size="80">80</li>
-                            <li class="size-ul-li" data-size="100">100</li>
-                        </ul>
-                        <div class="price">
-                            Цена:
-                            <span class="price-span active" data-price="40" data-sum="400">400</span>
-                            <span class="price-span" data-price="80" data-sum="900">900</span>
-                            <span class="price-span" data-price="100" data-sum="1200">1200</span>
-                            руб
-                        </div>
-                        <div class="btn-all all-js-data" data-toggle="modal" data-target=".modal-tovar">Купить в один
-                            клик
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="catalog-item effect-5">
-                    <div class="catalog-item-hover">
-                        <div class="catalog-item-img">
-                            <img src="icons/3.png" alt="" class="img-responsive">
-                        </div>
-                        <div class="name">Название товара3</div>
-                        <div class="name-info">Краткая характеристика</div>
-                        <div class="size">Размер(см)</div>
-                        <ul class="size-ul">
-                            <li class="size-ul-li active" data-size="40">40</li>
-                            <li class="size-ul-li" data-size="80">80</li>
-                            <li class="size-ul-li" data-size="100">100</li>
-                        </ul>
-                        <div class="price">
-                            Цена:
-                            <span class="price-span active" data-price="40" data-sum="400">400</span>
-                            <span class="price-span" data-price="80" data-sum="900">900</span>
-                            <span class="price-span" data-price="100" data-sum="1200">1200</span>
-                            руб
-                        </div>
-                        <div class="btn-all all-js-data" data-toggle="modal" data-target=".modal-tovar">Купить в один
-                            клик
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="catalog-item effect-5">
-                    <div class="catalog-item-hover">
-                        <div class="catalog-item-img">
-                            <img src="icons/3.png" alt="" class="img-responsive">
-                        </div>
-                        <div class="name">Название товара3</div>
-                        <div class="name-info">Краткая характеристика</div>
-                        <div class="size">Размер(см)</div>
-                        <ul class="size-ul">
-                            <li class="size-ul-li active" data-size="40">40</li>
-                            <li class="size-ul-li" data-size="80">80</li>
-                            <li class="size-ul-li" data-size="100">100</li>
-                        </ul>
-                        <div class="price">
-                            Цена:
-                            <span class="price-span active" data-price="40" data-sum="400">400</span>
-                            <span class="price-span" data-price="80" data-sum="900">900</span>
-                            <span class="price-span" data-price="100" data-sum="1200">1200</span>
-                            руб
                         </div>
                         <div class="btn-all all-js-data" data-toggle="modal" data-target=".modal-tovar">Купить в один
                             клик
@@ -650,15 +490,6 @@
 
 <footer class="footer header">
     <div class="container">
-        <!--        <div class="row">
-                    <div class="col-md-3">
-                        logo
-                    </div>
-                    <div class="col-md-3 offset-md-6">
-                        <a href="tel:+7(999) 999-99-99" class="head-phone">+7(999) 999-99-99</a>
-                        <span class="head-dos">Доставка по Казани <span>бесплатно!</span></span>
-                    </div>
-                </div>-->
         <div class="row">
             <div class="col-md-12">
                 <div class="foot-social">
@@ -670,6 +501,20 @@
                     </a>
                     <a href="#" class="foot-social-a" target="_blank">
                         <img src="icons/svg/instagram.svg" alt="" class="img-responsive js-svg-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="foot-info">
+                    <a href="tel:+7(999)-999-99-99" class="foot-info-all">
+                        <img src="icons/svg/phone-call.svg" alt="" class="img-responsive js-svg-img">
+                        +7(999)-999-99-99
+                    </a>
+                    <a href="mailto:email@email.email" class="foot-info-all">
+                        <img src="icons/svg/email.svg" alt="" class="img-responsive js-svg-img">
+                        email@email.email
                     </a>
                 </div>
             </div>

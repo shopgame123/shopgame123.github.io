@@ -4,6 +4,9 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
+  .form-call
+    &_akcii
+      margin-top: 40px
   .btn-all
     height: 46px
     font-size: 20px
@@ -68,11 +71,24 @@
     font-size: 26px
   .modal-tovar-item__text
     font-size: 20px
-
+  .form-call.form-call_akcii .input-nal
+    margin-bottom: 0
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
+  .footer .foot-info-all
+    font-size: 17px
+  .footer .foot-info-all .img-responsive
+    width: 21px
+    height: 21px
+    margin-right: 6px
+  .form-call.form-call_akcii .input-nal
+    margin-bottom: 0
+  .header .head-phone .img-responsive
+    width: 20px
+    height: 20px
+    margin-right: 2px
   .header .head-menu > nav > ul > li > a, .form-call-text, .form-call .input-title, .section-two .catalog-item .name
     font-size: 15px
   .header .head-phone, .form-call .input-nal
@@ -143,6 +159,7 @@
     padding: 2px 0
   .modal-tovar .modal-dialog
     width: 300px
+    margin: 0 auto
   .section-four .sect-preim .preim-item .img-responsive
     width: 70px
     height: 70px
@@ -166,10 +183,99 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
+  .modal-open
+    overflow: hidden
+  .header .logo
+    display: inline-block
+  .footer .foot-info-all
+    font-size: 20px
+  .footer .foot-info-all .img-responsive
+    width: 25px
+    height: 25px
+  .header .head-phone .img-responsive
+    width: 24px
+    height: 24px
+  .section-two .catalog-item .price-span-old::before
+    top: 14px
+  .form-call.form-call_akcii .input-nal
+    margin-bottom: 10px
+  .header .head-dos
+    display: block
+  .header .head-phone
+    display: inline-block
+  .header .head-phone .img-responsive
+    display: inline-block
+  .bar-menu
+    position: fixed
+    right: 10px
+    top: 30px
+    z-index: 11
+    width: 30px
+    height: 20px
+    span
+      transition: all .1s ease
+      position: absolute
+      display: block
+      height: 2px
+      background-color: #97a4b2
+      width: 30px
+      &::before
+        top: -5px
+      &::after
+        top: 5px
+      &::before, &::after
+        transition: all .3s ease
+        content: ''
+        position: absolute
+        width: 100%
+        height: 2px
+        background-color: #97a4b2
+    &.active
+      span
+        height: 0
+        &::after
+          top: 0
+          transform: rotate(-45deg)
+        &::before
+          top: 0
+          transform: rotate(45deg)
+
+  .modal-tovar .modal-dialog
+    width: 380px
   .wrap-head .title-head
     font-size: 52px
-  .head-menu
-    display: none
+  .header
+    .head-menu
+      z-index: 10
+      width: 100%
+      height: 100%
+      position: fixed
+      top: 0
+      left: 0
+      visibility: hidden
+      background-color: rgba(57, 75, 95, 0.99)
+      overflow-x: hidden
+      overflow-y: auto
+      transition: all .5s ease
+      transform: translateY(100%)
+      > nav
+        > ul
+          flex-wrap: wrap
+          align-items: center
+          justify-content: center
+          text-align: center
+          padding-top: 50px
+          > li
+            width: 100%
+            margin: 10px 0
+            > a
+              display: inline-block
+              margin: 0
+              padding: 0
+              vertical-align: middle
+  .show-menu .header .head-menu
+    visibility: visible
+    transform: translateY(0%)
   .form-call
     padding: 22px
   .form-call-title, .wrap-head .text-head
@@ -182,14 +288,127 @@
     font-size: 22px
   .btn-all
     font-size: 22px
-    height: 48px
+    height: 54px
   .form-call .input-nal
     margin-bottom: 20px
+  .all-text
+    font-size: 20px
+  .block-akcii-top-number
+    font-size: 50px
+  .block-akcii-top
+    width: 80%
+  .block-akcii-top-title
+    font-size: 20px
+  .section-three
+    min-height: 0
+  .all-title
+    font-size: 30px
+  .section-two .catalog-item-img
+    height: 240px
+  .section-two .catalog-item-hover
+    text-align: center
+  .section-two .catalog-item .name
+    font-size: 26px
+  .section-two .catalog-item .name-info
+    font-size: 14px
+  .section-two .catalog-item .size, .section-two .catalog-item .color
+    font-size: 16px
+  .section-two .catalog-item .df
+    justify-content: center
+  .section-two .catalog-item .price
+    font-size: 28px
+    justify-content: center
+  .section-two .catalog-item .price-span-old
+    right: -140px
+  .section-two .catalog-item .size-ul-li.active
+    width: 26px
+    height: 26px
+    font-size: 16px
+    margin: 0 10px
+  .section-two .catalog-item .btn-all
+    font-size: 20px
+    height: 48px
+    padding: 5px 0
+  .preim-item
+    margin-bottom: 40px
+  .section-four .sect-preim .preim-item-text
+    font-size: 22px
+  .section-four .sect-preim .preim-item .min-h
+    min-height: 0
+  .section-four .sect-preim .preim-item-title
+    font-size: 50px
+  .footer .foot-copy
+    font-size: 13px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-  /**/
-
+  .footer .foot-info-all:first-child, .footer .foot-info-all:last-child
+    margin: 0
+  .footer .foot-info-all .img-responsive
+    width: 21px
+    height: 21px
+  .footer .foot-info-all
+    font-size: 18px
+  .footer .foot-info
+    flex-wrap: wrap
+  .wrap-head .title-head
+    font-size: 44px
+  .form-call-title, .wrap-head .text-head
+    font-size: 22px
+  .header .head-phone, .form-call .input-nal
+    font-size: 20px
+  .header .head-menu > nav > ul > li > a, .form-call-text, .form-call .input-title, .section-two .catalog-item .name
+    font-size: 18px
+  .header .head-phone, .form-call .input-nal
+    font-size: 18px
+  .btn-all
+    height: 50px
+    font-size: 22px
+  .header
+    margin-bottom: 0
+  .all-title
+    font-size: 26px
+  .all-text
+    font-size: 18px
+  .block-akcii-top-number
+    font-size: 40px
+  .block-akcii-top-title
+    font-size: 16px
+  .block-akcii-top
+    width: 66%
+  .section-two .catalog-item .name
+    font-size: 22px
+  .section-two .catalog-item .name-info
+    font-size: 12px
+  .section-two .catalog-item .size, .section-two .catalog-item .color
+    font-size: 13px
+  .section-two .catalog-item .size-ul-li.active
+    width: 22px
+    height: 22px
+    font-size: 14px
+  .section-two .catalog-item .price
+    font-size: 24px
+    margin: 20px 0
+  .section-two .catalog-item .price-span-old
+    right: -80px
+  .modal-tovar .modal-dialog
+    width: 310px
+  .section-four .sect-preim .preim-item .img-responsive
+    width: 50px
+    height: 50px
+  .section-four .sect-preim .preim-item-text
+    font-size: 18px
+    margin-top: 10px
+  .section-four .sect-preim .preim-item-title
+    font-size: 40px
+  .section-five .carousel-otziv-item-text
+    font-size: 16px
+    margin-top: 16px
+  .section-five .carousel-otziv-item-img
+    width: 80px
+    height: 80px
+  .footer .foot-copy
+    font-size: 12px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
